@@ -43,7 +43,6 @@ async function generate_dot(hi){
         }
         resolve();
     });
-
 }
 
 async function main(){
