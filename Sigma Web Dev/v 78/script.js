@@ -15,8 +15,7 @@ function dots(hi){
         setTimeout(() => {
             hi.innerText = hi.innerText + " .";
             resolve();
-        }, 200);
-        
+        }, 200); 
     });
 }
 
