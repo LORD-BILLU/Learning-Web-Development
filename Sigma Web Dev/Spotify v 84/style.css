@@ -1,4 +1,21 @@
 
+/* .fredoka-<uniquifier> {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+*{
+    font-family: "Fredoka", sans-serif;
+    font-weight: 470;
+    margin: 0;
+    padding: 0;
+}
+
+
 /* body{
     background-color: black;
     color: white;
@@ -6,10 +23,27 @@
 
 .left{
     width: 25vw;
+    padding: 14px;
 }
 
 .right{
     width: 75vw;
+}
+
+.home ul li{
+    list-style: none;
+    width: 20px;
+    display: flex;
+    gap: 4px;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
 }
 
 
