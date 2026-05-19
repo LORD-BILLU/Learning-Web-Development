@@ -1,6 +1,9 @@
+/* 
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
 
-/* .fredoka-<uniquifier> {
-  font-family: "Fredoka", sans-serif;
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
@@ -9,8 +12,8 @@
 } */
 
 *{
-    font-family: "Fredoka", sans-serif;
-    font-weight: 470;
+    font-family: "Roboto", sans-serif;
+    font-weight: 650;
     margin: 0;
     padding: 0;
 }
@@ -35,6 +38,7 @@
     width: 20px;
     display: flex;
     gap: 4px;
+    padding: 10px;
 }
 
 .invert{
@@ -44,6 +48,10 @@
 .bg-black{
     background-color: black;
     color: white;
+}
+
+.bg-grey{
+    background-color: #121212;
 }
 
 
