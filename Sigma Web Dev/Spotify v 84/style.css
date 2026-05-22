@@ -29,9 +29,7 @@ body{
     padding: 4px;
 }
 
-.right{
-    width: 75vw;
-}
+
 
 .home ul li{
     list-style: none;
@@ -77,9 +75,11 @@ body{
 }
 
 .right{
+    width: 75vw;
     margin-top: 9px;
     margin-right: 9px;
     margin-bottom: 9px;
+    position: relative;
 }
 
 .spotifyPlaylists{
@@ -89,12 +89,56 @@ body{
 .card img{
     width: 100%;
     object-fit: contain;
+    border-radius: 8px;
 }
 
 .card{
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     width: 180px;
     padding: 10px;
-    background-color: cadetblue;
+    background-color: rgb(34,34,34);
+    border-radius: 12px;
+    position: relative;
 }
+
+.card p{
+    font-weight: 300;
+    font-size: smaller;
+}
+
+.card > h4,.card > p{
+    padding-top: 4px;
+}
+
+.play{
+    position: absolute;
+    bottom: 64px;
+    right: 21px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.playBar{
+    position: absolute;
+    bottom: 0;
+    background-color: aqua;
+    width: 100%;
+    padding: 12px;
+    
+}
+
+.songButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+/* .signUp{
+    sign up for this code please
+}
+
+.logIn{
+    Log in please for this sign up please
+} */
 

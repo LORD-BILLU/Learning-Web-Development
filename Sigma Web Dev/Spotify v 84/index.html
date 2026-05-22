@@ -57,24 +57,51 @@
                 </div>
 
                 <div class="buttons">
-                    <button>Sign up</button>
-                    <button>Log in</button>
+                    <button class="signUp">Sign up</button>
+                    <button class="logIn">Log in</button>
                 </div>
             </div>
 
             <div class="spotifyPlaylists">
                 <h1>Spotify Playlists</h1>
                 <div class="cardContainer">
+
+
                     <div class="card">
-                        <img src="weekend.png" alt="card">
-                        <h4>Title</h4>
-                        <p>Description</p>
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 512 512">
+                                <circle cx="256" cy="256" r="256" fill="#1ED760" />
+
+                                <path d="
+                                            M185 145
+                                            Q185 120 208 134
+                                            L390 242
+                                            Q418 256 390 270
+                                            L208 378
+                                            Q185 392 185 367
+                                            Z
+                                        " fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="music-cover.jpg" alt="card">
+                        <h4>Happy Hits</h4>
+                        <p>Hits to Boost your Mood</p>
                     </div>
+
+
                 </div>
+
+                <div class="playBar">
+                    <div class="songInfo"></div>
+                    <div class="songButtons">
+                        <img src="prev.svg" alt="prev_btn">
+                        <img src="play.svg" alt="play_btn">
+                        <img src="next.svg" alt="next_btn">
+                    </div>
+                    <div class="songTime"></div>
+                </div> 
             </div>
-
         </div>
-
     </div>
 
 </body>
