@@ -193,3 +193,7 @@ body{
     bottom: 6px;
     transition: left 0.5s;
 }
+
+#prev:hover,#play:hover,#next:hover{
+    cursor: pointer;
+}
