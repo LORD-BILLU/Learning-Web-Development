@@ -62,7 +62,7 @@ body{
 }
 
 .library{
-    min-height: 72vh;
+    min-height: 71vh;
 }
 
 .header{
@@ -71,7 +71,6 @@ body{
     align-items: center;
     background-color: rgb(34,34,34);
     padding: 9px;
-    /* margin: 7px; */
 }
 
 .right{
@@ -119,12 +118,12 @@ body{
 }
 
 .playBar{
-    position: absolute;
-    bottom: 0;
-    background-color: aqua;
-    width: 100%;
+    position: fixed;
+    bottom: 16px;
+    background-color: rgb(221, 221, 221);
+    width: 866px;
     padding: 12px;
-    
+    border-radius: 10px;
 }
 
 .songButtons{
@@ -144,4 +143,41 @@ body{
 
 .songList ul{
     list-style-type: decimal;
+    padding: 12px 0;
+}
+
+.songList ul li{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 225px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.songList{
+    height: 65vh;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color:  #5a5a5a #121212;
+}
+
+.seekBar{
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 2px;
+}
+
+.circle{
+    height: 23px;
+    width: 23px;
+    background-color: black;
+    border-radius: 13px;
 }
