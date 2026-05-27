@@ -19,7 +19,7 @@ async function getSongs(){
 
 }
 
-let audio=1;
+let current_sng = new Audio();
 
 async function main(){
     let songs = await getSongs();
@@ -31,7 +31,7 @@ async function main(){
         songUL.innerHTML = songUL.innerHTML + `<li>
                             <img src="music.svg" class="invert" alt="music-logo">
                             <div class="info">
-                                <div>${final}</div>
+                                <div class="name">${final}</div>
                                 <div>LORD BILLU</div>
                             </div>
                             <img src="play.svg" class="invert" alt="play-pause">
@@ -39,7 +39,16 @@ async function main(){
     }
 
     console.log(songs);
-    audio = new Audio(songs[0]);
+    
+    let song1 = Array.from(document.querySelector(".songList").getElementsByTagName("ul")[0].getElementsByTagName("li"));
+    song1.forEach((element) => {
+        let n1 = element.querySelector(".name").innerText;
+        element.addEventListener('click',()=>{
+            let path = `songs/${n1}`;
+            let audio = new Audio(path);
+            audio.play();
+        });
+    });
 }
 
 

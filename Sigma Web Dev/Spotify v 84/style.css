@@ -121,8 +121,9 @@ body{
     position: fixed;
     bottom: 16px;
     background-color: rgb(221, 221, 221);
-    width: 866px;
+    width: 959px;
     padding: 12px;
+    padding-bottom: 20px;
     border-radius: 10px;
 }
 
@@ -156,6 +157,10 @@ body{
     width: 225px;
 }
 
+.songList ul li :hover{
+    cursor: pointer;
+}
+
 .info{
     display: flex;
     flex-direction: column;
@@ -170,14 +175,21 @@ body{
 }
 
 .seekBar{
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 10px;
-    height: 2px;
+    height: 1px;
+    margin: 6px;
+    width: 96%;
+    position: absolute;
 }
 
 .circle{
-    height: 23px;
-    width: 23px;
+    height: 13px;
+    width: 13px;
     background-color: black;
     border-radius: 13px;
+    position: relative;
+    left: -0.5%;
+    bottom: 6px;
+    transition: left 0.5s;
 }
