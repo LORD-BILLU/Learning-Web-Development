@@ -1,12 +1,12 @@
-const { createServer } = require('node:http');
+import http from "http"
 
 const hostname = '127.0.0.1';
 const port = 3000;
 
-const server = createServer((req, res) => {
+const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World i am BILLU');
+  res.setHeader('Content-Type', 'text/html');
+  res.end(`<h1>LORD BILLU</h1>`);
 });
 
 server.listen(port, hostname, () => {
