@@ -7,5 +7,8 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port ${port}`); 
 })
+
+// i have no idea what the fuck is going on in this video
+// idk man i am gonna go with the flow 
